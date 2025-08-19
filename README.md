@@ -31,7 +31,7 @@ All the other files are not relevant to the exercises and should not be updated.
 Within each exercise, are important directories to know of:
 
 ```
-/button-exercise
+/select-exercise
   ∟ components // contains component implementation
   ∟ ui // contains playground to showcase component states
   ∟ demo // client developer's consumption of component on a live page
