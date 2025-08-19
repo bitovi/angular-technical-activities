@@ -30,7 +30,7 @@ export const routes: Routes = [
       },
     ],
   },
-    {
+  {
     path: 'button-exercise',
     loadComponent: () =>
       import('./_/button-exercise/button-exercise.component').then(
