@@ -5,31 +5,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'button-exercise', pathMatch: 'full' },
-  {
-    path: 'button-exercise',
-    loadComponent: () =>
-      import('./_/button-exercise/button-exercise.component').then(
-        (m) => m.ButtonExerciseComponent,
-      ),
-    children: [
-      { path: '', redirectTo: 'ui', pathMatch: 'full' },
-      {
-        path: 'ui',
-        loadComponent: () =>
-          import('./exercises/button-exercise/ui/ui.component').then(
-            (m) => m.UiComponent,
-          ),
-      },
-      {
-        path: 'demo',
-        loadComponent: () =>
-          import('./exercises/button-exercise/demo/demo.component').then(
-            (m) => m.DemoComponent,
-          ),
-      },
-    ],
-  },
+  { path: '', redirectTo: 'select-exercise', pathMatch: 'full' },
   {
     path: 'select-exercise',
     loadComponent: () =>
@@ -49,6 +25,30 @@ export const routes: Routes = [
         path: 'demo',
         loadComponent: () =>
           import('./exercises/select-exercise/demo/demo.component').then(
+            (m) => m.DemoComponent,
+          ),
+      },
+    ],
+  },
+    {
+    path: 'button-exercise',
+    loadComponent: () =>
+      import('./_/button-exercise/button-exercise.component').then(
+        (m) => m.ButtonExerciseComponent,
+      ),
+    children: [
+      { path: '', redirectTo: 'ui', pathMatch: 'full' },
+      {
+        path: 'ui',
+        loadComponent: () =>
+          import('./exercises/button-exercise/ui/ui.component').then(
+            (m) => m.UiComponent,
+          ),
+      },
+      {
+        path: 'demo',
+        loadComponent: () =>
+          import('./exercises/button-exercise/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
