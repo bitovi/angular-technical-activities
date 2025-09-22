@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-technical-exercises": {
+    "angular-technical-activities": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -60,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-technical-exercises:build:production"
+              "buildTarget": "angular-technical-activities:build:production"
             },
             "development": {
-              "buildTarget": "angular-technical-exercises:build:development"
+              "buildTarget": "angular-technical-activities:build:development"
             }
           },
           "defaultConfiguration": "development"

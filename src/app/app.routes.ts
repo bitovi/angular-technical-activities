@@ -5,98 +5,98 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'select-exercise', pathMatch: 'full' },
+  { path: '', redirectTo: 'select-activity', pathMatch: 'full' },
   {
-    path: 'select-exercise',
+    path: 'select-activity',
     loadComponent: () =>
-      import('./_/select-exercise/select-exercise.component').then(
-        (m) => m.SelectExerciseComponent,
+      import('./_/select-activity/select-activity.component').then(
+        (m) => m.SelectActivityComponent,
       ),
     children: [
       { path: '', redirectTo: 'ui', pathMatch: 'full' },
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/select-exercise/ui/ui.component').then(
+          import('./activities/select-activity/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/select-exercise/demo/demo.component').then(
+          import('./activities/select-activity/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
     ],
   },
   {
-    path: 'button-exercise',
+    path: 'button-activity',
     loadComponent: () =>
-      import('./_/button-exercise/button-exercise.component').then(
-        (m) => m.ButtonExerciseComponent,
+      import('./_/button-activity/button-activity.component').then(
+        (m) => m.ButtonActivityComponent,
       ),
     children: [
       { path: '', redirectTo: 'ui', pathMatch: 'full' },
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/button-exercise/ui/ui.component').then(
+          import('./activities/button-activity/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/button-exercise/demo/demo.component').then(
+          import('./activities/button-activity/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
     ],
   },
   {
-    path: 'checkbox-exercise',
+    path: 'checkbox-activity',
     loadComponent: () =>
-      import('./_/checkbox-exercise/checkbox-exercise.component').then(
-        (m) => m.CheckboxExerciseComponent,
+      import('./_/checkbox-activity/checkbox-activity.component').then(
+        (m) => m.CheckboxActivityComponent,
       ),
     children: [
       { path: '', redirectTo: 'ui', pathMatch: 'full' },
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/checkbox-exercise/ui/ui.component').then(
+          import('./activities/checkbox-activity/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/checkbox-exercise/demo/demo.component').then(
+          import('./activities/checkbox-activity/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
     ],
   },
   {
-    path: 'modal-exercise',
+    path: 'modal-activity',
     loadComponent: () =>
-      import('./_/modal-exercise/modal-exercise.component').then(
-        (m) => m.ModalExerciseComponent,
+      import('./_/modal-activity/modal-activity.component').then(
+        (m) => m.ModalActivityComponent,
       ),
     children: [
       { path: '', redirectTo: 'ui', pathMatch: 'full' },
       {
         path: 'ui',
         loadComponent: () =>
-          import('./exercises/modal-exercise/ui/ui.component').then(
+          import('./activities/modal-activity/ui/ui.component').then(
             (m) => m.UiComponent,
           ),
       },
       {
         path: 'demo',
         loadComponent: () =>
-          import('./exercises/modal-exercise/demo/demo.component').then(
+          import('./activities/modal-activity/demo/demo.component').then(
             (m) => m.DemoComponent,
           ),
       },
