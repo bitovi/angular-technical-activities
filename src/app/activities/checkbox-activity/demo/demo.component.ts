@@ -1,0 +1,28 @@
+import { Component } from '@angular/core';
+import { CheckboxComponent } from '../components/checkbox/checkbox.component';
+import { ButtonComponent } from '../../button-activity/components/button/button.component';
+
+@Component({
+  selector: 'app-demo-checkout-activity',
+  templateUrl: './demo.component.html',
+  styleUrls: ['./demo.component.scss'],
+  standalone: true,
+  imports: [CheckboxComponent, ButtonComponent],
+})
+export class DemoComponent {
+  meats = [
+    { text: 'Pepperoni', checked: true },
+    { text: 'Sausage' },
+    { text: 'Chicken' },
+  ];
+
+  vegetables: { text: string; checked?: boolean }[] = [
+    { text: 'Bell peppers' },
+    { text: 'Jalapenos' },
+    { text: 'Onions' },
+  ];
+
+  toggleCheckbox(instance: { checked?: boolean }): void {
+    instance.checked = !instance.checked;
+  }
+}
