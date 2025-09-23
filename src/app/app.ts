@@ -12,5 +12,5 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('Angular Technical Exercises');
+  protected readonly title = signal('Angular Technical Activities');
 }
